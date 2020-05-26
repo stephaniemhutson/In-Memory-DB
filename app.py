@@ -21,9 +21,12 @@ class Database():
         '''
         Loads the csv file given into a dictionary
         '''
-        f = open(self._file_name, 'r')
-        data = self.format_csv(f)
-        f.close()
+        try:
+            f = open(self._file_name, 'r')
+            data = self.format_csv(f)
+            f.close()
+        except FileNotFoundError:
+            data = {}
         return data
 
     def _get_counts(self):

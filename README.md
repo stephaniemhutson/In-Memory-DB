@@ -11,7 +11,9 @@ Run the following command:
 `python app.py [optional:path/to/database.csv]`
 
 If you do not submit a path to a csv file, the database csv (`db.csv`) that is in
-this directory will be used.
+this directory will be used. If you do no have an existing csv you want to use
+as the database, you can set a path to where you want it to be saved when you are
+done.
 
 ### Commands:
 
